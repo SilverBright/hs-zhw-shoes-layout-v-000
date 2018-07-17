@@ -24,15 +24,24 @@
 
 /* Posititoning Classes */
 
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
+.row {
+    clear: both;
+    margin-bottom: 2%;
+  }
+
+[class*="col-"] {
+  float: left;
+  margin-left: 2%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+[class*="col-"]:first-child {
+  margin-left: 0;
+}
+
+.col-1 {
+  width: 32%;
+}
+
+.col-2 {
+  width: 66%;
 }
